@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sna-gtc"
+version = "0.1.0"
+description = "Social Network Analysis Using Graph Theory and Combinatorics"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Siddhartha Kallepalli", email = "siddharthakallepalli52@gmail.com"},
+]
+keywords = [
+    "social-network-analysis",
+    "graph-theory",
+    "combinatorics",
+    "centrality",
+    "community-detection",
+    "cliques",
+]
+dependencies = []
+
+[project.optional-dependencies]
+viz = ["matplotlib>=3.7", "numpy>=1.24"]
+dev = ["pytest>=7.4", "matplotlib>=3.7", "numpy>=1.24"]
+
+[project.scripts]
+sna-gtc = "sna_gtc.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
