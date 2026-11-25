@@ -43,33 +43,34 @@ A clean, modular Python library and CLI for analyzing social networks through **
 
 ## Installation
 
-```bash
+Open a terminal inside the project folder and run:
+
+```powershell
 python -m venv .venv
-# On Windows PowerShell:
-.\.venv\Scripts\Activate.ps1
-# Install package in editable mode with dev/visualization extras:
-pip install -e ".[dev]"
+.\.venv\Scripts\python.exe -m pip install -e ".[dev]"
 ```
+
+*(Using `.\.venv\Scripts\python.exe` directly avoids PowerShell `Activate.ps1` execution policy blocks on Windows. On macOS/Linux, use `.venv/bin/python`.)*
 
 ## Quick Start
 
 Run the CLI analysis on Zachary's Karate Club or Florentine Families:
 
-```bash
-python -m sna_gtc.cli --dataset karate
-python -m sna_gtc.cli --dataset florentine --output-dir outputs
+```powershell
+.\.venv\Scripts\python.exe -m sna_gtc.cli --dataset karate
+.\.venv\Scripts\python.exe -m sna_gtc.cli --dataset florentine --output-dir outputs
 ```
 
 Or run the example scripts:
 
-```bash
-python examples/karate_club_analysis.py
-python examples/florentine_families_power.py
-python examples/combinatorial_bounds_demo.py
+```powershell
+.\.venv\Scripts\python.exe examples/karate_club_analysis.py
+.\.venv\Scripts\python.exe examples/florentine_families_power.py
+.\.venv\Scripts\python.exe examples/combinatorial_bounds_demo.py
 ```
 
 ## Running Tests
 
-```bash
-pytest -v
+```powershell
+.\.venv\Scripts\pytest.exe -v
 ```
