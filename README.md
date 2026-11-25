@@ -18,12 +18,12 @@ A clean, modular Python library and CLI for analyzing social networks through **
 
 ### 3. Combinatorial Network Analysis (`sna_gtc.combinatorics`)
 - **Triangle & Wedge Enumeration**: degree-ordered $O(m^{3/2})$ triangle counting and full **Triadic Census** across all $\binom{n}{3}$ triples
-- **Walk Counting via Matrix Powers**: exact $A^k$ walk counts (satisfying $\operatorname{tr}(A^3)/6 = \text{triangles}$)
-- **Cliques & Cores**: Bron–Kerbosch with Tomita pivoting (`find_maximal_cliques`, clique number $\omega(G)$) and Batagelj–Zaveršnik $k$-core decomposition
+- **Walk Counting via Matrix Powers**: exact $A^k$ walk counts, satisfying $\mathrm{tr}(A^3)/6 = \text{triangles}$
+- **Cliques & Cores**: Bron–Kerbosch with Tomita pivoting (`find_maximal_cliques`, clique number ω(G)) and Batagelj–Zaveršnik $k$-core decomposition
 - **Graph Coloring**: greedy Welsh–Powell / smallest-last coloring ($\chi(G) \le \Delta(G)+1$)
 - **Degree Realizability**: **Havel–Hakimi theorem** check
 - **Extremal & Enumerative Combinatorics**:
-  - **Turán's theorem** bound $\operatorname{ex}(n, K_r)$
+  - **Turán's theorem** bound $\mathrm{ex}(n, K_r)$
   - **Stirling numbers of the second kind** $S(n, k)$ and **Bell numbers** $B_n$ for community partition counting
   - **Erdős–Rényi** $G(n, p)$ combinatorial expectations and connectivity threshold $\frac{\ln n}{n}$
   - **Bipartite Maximum Matching** (Kuhn's augmenting paths / Hall's Marriage Theorem)
